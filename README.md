@@ -17,7 +17,7 @@ Yalnızca ses dosyası çıkarımı için
   
 ## GUI
 
-![GUI](https://github.com/BartuAbiHD/RVC-GUI-TR/raw/main/docs/GUI.JPG)
+![GUI](https://raw.githubusercontent.com/BartuAbiHD/RVC-GUI-TR/main/docs/GUI.png)
  <br><br>
   
 ## Windows kullanıcıları için doğrudan kurulum
