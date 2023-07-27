@@ -1,9 +1,8 @@
-# RVC-GUI-TR
 <div align="center">
 
-<h1>RVC GUI<br><br>
+<h1>RVC GUI TURKISH<br><br>
   
-For audio file inference only
+Yalnızca ses dosyası çıkarımı için
 
   <br>
 
@@ -21,31 +20,31 @@ For audio file inference only
 ![GUI](https://github.com/Tiger14n/RVC-GUI/raw/main/docs/GUI.JPG)
  <br><br>
   
-## Direct setup for Windows users
-## [Windows-pkg](https://github.com/Tiger14n/RVC-GUI/releases/tag/Windows-pkg)
+## Windows kullanıcıları için doğrudan kurulum
+## [Windows-pkg](https://github.com/BartuAbiHD/RVC-GUI-TR/releases/tag/Windows-pkg)
   
 <br><br>
-## Preparing the environment
+## Çevreyi Hazırlamak
 
 
-* Install Python version +3.8 if you have not:
+* Yapmadıysanız Python + 3.8 sürümünü yükleyin:
 
-* Execute these commands
+* Bu komutları yürütün
 
-Windows with Nvidia cards
+Nvıdıa kartlı Windows'lar
 ```bash
 python -m pip install -U pip setuptools wheel
 pip install -U torch torchaudio --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 ```
-Other
+Diğer
 ```
 python -m pip install -U pip setuptools wheel
 pip install -U torch torchaudio 
 pip install -r requirements.txt
 ```
 
-Apple silicon Macs fix
+Apple silikon Mac'leri düzeltme
 ```
 pip install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
 
@@ -53,32 +52,32 @@ export PYTORCH_ENABLE_MPS_FALLBACK=1
 ```
 <br>
 
-* Downlaod [hubert_base.pt](https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/hubert_base.pt/) and place it in the root folder
+* [hubert_base.pt](https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/hubert_base.pt/)'i indirin ve kök klasörüne yerleştirin
 
 <br>
  
-* Then use this command to start RVC GUI:
+* Ardından RVC GUI'yi başlatmak için bu komutu kullanın:
 ```bash
 python rvcgui.py
 ```
-Or run this file on windows
+Veya bu dosyayı Windows'ta çalıştırın
 ```
 RVC-GUI.bat
 ```
 
-# Loading models
-use the import button to import a model from a zip file, 
-* The .zip must contain the ".pth" weight file. 
-* The .zip is recommended to contain the feature retrieval files ".index"
+# Modelleri yükleme
+Bir Modeli Zip dosyasından içe aktarmak için İçe Aktar düğmesini kullanın, 
+* .Zip ".pth" ağırlık dosyasını içermelidir. 
+* .Zip'in ".index" özellik alma dosyalarını içermesi önerilir.
 
-Or place the model manually in root/models
+Veya modeli manuel olarak kök dizindeki "modeller" klasörüne yerleştirin.
 ```
-models
-├───Person1
+modeller
+├───Kişi1
 │   ├───xxxx.pth
 │   ├───xxxx.index
 │   └───xxxx.npy
-└───Person2
+└───Kişi2
     ├───xxxx.pth
     ├───...
     └───...
@@ -88,12 +87,6 @@ models
 
 <br> 
 
-### How to get models?.
-* Join the[ AI Hub](https://discord.gg/aihub) Discord 
-* [Community Models on HuggingFace](https://huggingface.co/QuickWick/Music-AI-Voices/tree/main) by Wicked aka QuickWick
-
-<br>
-
-K7#4523
-
-
+### Modeller nasıl alınır?
+* [ Trias AI](https://discord.gg/tpy6JbZhh8) Discord sunucusuna katılın. 
+* [HuggingFace](https://huggingface.co/BartuAbiHD/rvc/tree/main) üzerinde topluluk modelleri için [burayı](https://huggingface.co/BartuAbiHD/rvc/tree/main) ziyaret edebilirsiniz. 
