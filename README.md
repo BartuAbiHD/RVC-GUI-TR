@@ -31,7 +31,7 @@ Yalnızca ses dosyası çıkarımı için
 
 * Bu komutları yürütün
 
-Nvıdıa kartlı Windows'lar
+Nvidia kartlı Windows'lar
 ```bash
 python -m pip install -U pip setuptools wheel
 pip install -U torch torchaudio --index-url https://download.pytorch.org/whl/cu118
