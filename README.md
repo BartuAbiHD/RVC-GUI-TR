@@ -60,7 +60,7 @@ export PYTORCH_ENABLE_MPS_FALLBACK=1
 ```bash
 python rvcgui.py
 ```
-Veya bu iki dosyalardan birini Windows'ta çalıştırın
+Veya bu iki dosyadan birini Windows'ta çalıştırın
 ```
 RVC-GUI.bat, RVC-GUI.exe
 ```
