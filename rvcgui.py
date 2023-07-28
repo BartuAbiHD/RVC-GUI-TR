@@ -4,6 +4,7 @@ from tkinter import filedialog
 import soundfile as sf
 import tkinter as tk
 import customtkinter as ctk
+import webbrowser
 
 import os
 import sys
@@ -392,14 +393,14 @@ def on_button_click():
 
         except Exception as e:
             print(e)
-            message = "Voice conversion failed", e
+            message = "Ses dönüşümü başarısız oldu.", e
 
     # Update the output label with the result
        # output_label.configure(text=result + "\n saved at" + output_file)
 
         run_button.configure(state="enabled")
     else:
-        message = "Please select a model and input audio file"
+        message = "Lütfen bir model seçin ve ses dosyası belirtin."
         run_button.configure(state="enabled")
         result_state.configure(text_color="red")
 
@@ -613,6 +614,13 @@ index_rate_label = ctk.CTkLabel(
 run_button = ctk.CTkButton(
     left_frame, fg_color="green", hover_color="darkgreen", text="Dönüştür", command=start_processing)
 
+def open_discord():
+    print("Discord button pressed")
+    webbrowser.open("http://discord.gg/tpy6JbZhh8")
+
+# intiilizing discord button widget
+discord_button = ctk.CTkButton(left_frame, fg_color="#5662F6", hover_color="#3C428D", text="Discord", command=open_discord)
+
 # intiilizing output label widget
 output_label = ctk.CTkLabel(right_frame, text="")
 
@@ -691,6 +699,7 @@ file_index_entry.grid(padx=10, pady=10)
 index_rate_label.grid(padx=10, pady=10)
 index_rate_entry.grid(padx=10, pady=10)
 run_button.grid(padx=30, pady=30, row=4, column=0, columnspan=2)
+discord_button.grid(padx=40, pady=40, row=8, column=0, columnspan=2)
 output_label.grid(padx=0, pady=10)
 
 root.mainloop()
