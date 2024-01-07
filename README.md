@@ -89,4 +89,4 @@ modeller
 
 ### Modeller nasıl alınır?
 * [ Trias AI](https://discord.gg/tpy6JbZhh8) Discord sunucusuna katılın. 
-* [HuggingFace](https://huggingface.co/BartuAbiHD/rvc/tree/main) üzerinde topluluk modelleri için [burayı](https://huggingface.co/BartuAbiHD/rvc/tree/main) ziyaret edebilirsiniz. 
+* [HuggingFace](https://huggingface.co/TriasAI) üzerinde topluluk modelleri için [burayı](https://huggingface.co/TriasAI) ziyaret edebilirsiniz. 
