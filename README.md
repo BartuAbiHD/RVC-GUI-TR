@@ -27,7 +27,7 @@ Yalnızca ses dosyası çıkarımı için
 ## Çevreyi Hazırlamak
 
 
-* Yapmadıysanız Python + 3.8 sürümünü yükleyin:
+* Yapmadıysanız Python 3.8 veya üstü bir sürümünü yükleyin:
 
 * Bu komutları yürütün
 
