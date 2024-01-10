@@ -62,7 +62,7 @@ python rvcgui.py
 ```
 Veya bu iki dosyadan birini Windows'ta çalıştırın
 ```
-RVC-GUI.bat, RVC-GUI.exe
+RVC-GUI Launcher.exe, RVC-GUI.bat
 ```
 
 # Modelleri yükleme
