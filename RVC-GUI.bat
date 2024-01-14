@@ -14,11 +14,13 @@ if exist "%runtimeFolder%\python.exe" (
     echo Running with the runtime Python, Please wait.
     msg * "RVC GUI aciliyor, lutfen biraz bekleyin.."
      "runtime/python.exe" rvcgui.py --pycmd "runtime/python.exe"
-      exit
+     pause 
+     #exit
 ) else (
     REM Runtime folder does not exist, so run the file using the system Python
     echo Running with the system Python.
     msg * "RVC GUI aciliyor, lutfen biraz bekleyin.."
     python.exe rvcgui.py --pycmd python.exe
-exit
+pause
+#exit
 )
