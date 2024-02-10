@@ -15,7 +15,7 @@ import customtkinter as ctk
 now_dir = os.getcwd()
 sys.path.append(now_dir)
 tmp = os.path.join(now_dir, "TEMP")
-os.makedirs(os.path.join(now_dir, "modeller"), exist_ok=True)
+os.makedirs(os.path.join(now_dir, "models"), exist_ok=True)
 os.makedirs(os.path.join(now_dir, "output"), exist_ok=True)
 os.environ["TEMP"] = tmp
 warnings.filterwarnings("ignore")
@@ -520,7 +520,7 @@ def update_config(selected):
         get_vc(pth_file_path, 0)
 
 
-models_dir = "./modeller"
+models_dir = "./models"
 model_folders = [f for f in os.listdir(models_dir) if os.path.isdir(os.path.join(
     models_dir, f)) and any(f.endswith(".pth") for f in os.listdir(os.path.join(models_dir, f)))]
 
