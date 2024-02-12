@@ -618,8 +618,21 @@ def open_discord():
     print("Discord button pressed")
     webbrowser.open("http://discord.gg/tpy6JbZhh8")
 
+def show_donate_info():
+    global donate_info
+    if donate_info is None or not donate_info.winfo_exists():
+        donate_info = tk.Toplevel()
+        donate_info.title("Bağış Bilgileri")
+        donate_info.geometry("+%d+%d" % (root.winfo_screenwidth()//2 - donate_info.winfo_reqwidth()//2, root.winfo_screenheight()//2 - donate_info.winfo_reqheight()//2))
+        donate_info.resizable(False, False)
+        tk.Label(donate_info, text=" \n\n BTC Adresi: 3A7ihKhWEWD2vkxSwjoEbyT34nmrUgtCzL \n\n Enpara IBAN: TR62 0011 1000 0000 0123 4183 12 \n\n").pack()
+
 # intiilizing discord button widget
 discord_button = ctk.CTkButton(left_frame, fg_color="#5662F6", hover_color="#3C428D", text="Discord", command=open_discord)
+
+# intiilizing donate button widget
+donate_info = None
+donate_button = ctk.CTkButton(right_frame, fg_color="#EF8E19", hover_color="#C5730E", text="Bağış Yap", command=show_donate_info)
 
 # intiilizing output label widget
 output_label = ctk.CTkLabel(right_frame, text="")
@@ -700,6 +713,9 @@ index_rate_label.grid(padx=10, pady=10)
 index_rate_entry.grid(padx=10, pady=10)
 run_button.grid(padx=30, pady=30, row=4, column=0, columnspan=2)
 discord_button.grid(padx=40, pady=40, row=8, column=0, columnspan=2)
+donate_button.grid(padx=40, pady=40, row=8, column=0, columnspan=2)
 output_label.grid(padx=0, pady=10)
+
+root.resizable(False, False)
 
 root.mainloop()
