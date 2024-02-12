@@ -693,4 +693,6 @@ index_rate_entry.grid(padx=10, pady=10)
 run_button.grid(padx=30, pady=30, row=4, column=0, columnspan=2)
 output_label.grid(padx=0, pady=10)
 
+root.resizable(False, False)
+
 root.mainloop()
