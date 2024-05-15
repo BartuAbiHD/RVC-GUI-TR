@@ -34,13 +34,13 @@ Yalnızca ses dosyası çıkarımı için
 Nvidia kartlı Windows'lar
 ```bash
 python -m pip install -U pip setuptools wheel
-pip install -U torch torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install -U torch functorch torchaudio --index-url https://download.pytorch.org/whl/cu118 --no-warn-script-location
 pip install -r requirements.txt
 ```
 Diğer
 ```
 python -m pip install -U pip setuptools wheel
-pip install -U torch torchaudio 
+pip install -U torch torchaudio --no-warn-script-location
 pip install -r requirements.txt
 ```
 
